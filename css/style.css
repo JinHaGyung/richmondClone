@@ -1,0 +1,169 @@
+/* common */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+.w100{
+  width: 100%;
+  padding: 0 70px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* header */
+header{
+  position: fixed;
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  background-color: white;
+}
+#mobile_nav{
+  display: none;
+}
+#mobile_nav span{
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #111;
+}
+#mobile_nav span:nth-child(2){
+  margin: 5px 0;
+}
+#h_logo>a{
+  display: block;
+  width: 173px;
+  height: 50px;
+  background-image: url(../img/logo.png);
+}
+.gnb_bg{
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6;
+  position: absolute;
+  top: 100px; left: 0;
+  width: 100%; height: 0;
+  display: none;
+  transform: height 1s;
+  box-sizing: border-box;
+}
+#gnb:hover>.gnb_bg{
+  height: 190px;
+  display: block;
+}
+.lnb{
+  position: absolute;
+  top: 50px;
+  display: none;
+  padding-top: 20px;
+}
+.lnb>li{
+  padding: 10px 0;
+}
+.lnb>li>a{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 0.938rem;
+  white-space:nowrap;
+  text-align: center;
+}
+#gnb:hover .lnb{
+  display: block;
+}
+#gnb>ul{
+  display: flex;
+}
+#gnb>ul>li{
+  padding: 0 30px;
+  margin: 0 10px;
+  position: relative;
+}
+#gnb>ul>li>a{
+  font-size: 1.063rem;
+  text-decoration: none;
+  color: #181c1c;
+  font-weight: 500;
+  /* font-weight: 600; */
+}
+#h_icon{
+  display: flex;
+}
+.h_call{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.call_icon{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/tel-bl.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.call_txt{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.h_insta{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #181c1c;
+  background-image: url(../img/insta-wh.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.m_bg{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4);
+}
+.m_nav{
+  position: relative;
+  width: 250px;
+  background-color: #fff;
+  height: 100%;
+}
+.m_nav_logo{
+  height: 190px;
+  padding: 20px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: solid 1px #e6e6e6;
+}
+.m_nav>ul>li{
+  padding: 20px 20px;
+  margin: 0px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: solid 1px #e6e6e6;
+}
+.x_active{
+  position: absolute;
+  left: 280px;
+  top: 100px;
+}
+.x_bar{
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 3px;
+  transition: 0.5s 0.5s;
+  background: #fff;
+}
+.bar1{
+  transform: rotate(45deg);
+}
+.bar2{
+  margin-top: -2px;
+  transform: rotate(135deg);
+}
